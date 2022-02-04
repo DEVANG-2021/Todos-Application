@@ -422,7 +422,7 @@
     .todo{
         display : flex;
         flex-direction : column;
-       width : 77vw;
+       width : 76vw;
         height: auto;
         justify-content : space-between;
         transition: width 2s; 
@@ -574,3 +574,10 @@
         margin-left: 0px;
     }
 } */
+ @media screen and (max-width:280pxb){
+ .todo{
+     width: 100vw;
+    
+ }   
+    
+}  
