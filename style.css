@@ -409,6 +409,9 @@
         margin-top: 100px;
         margin-bottom: 150px;
     }
+   .todo-secotion .title{
+      padding : 5px;
+    }
     .h3{
         margin-top: 12px;
     }
