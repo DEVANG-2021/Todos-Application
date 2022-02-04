@@ -398,6 +398,7 @@
         height : auto;
         justify-content : space-between;
         transition: width 2s; 
+       margin-bottom : 100px;
     }
     .line{
         /* transform: rotate(90deg);
@@ -410,8 +411,8 @@
         margin-bottom: 150px;
     }
    .todo-secotion .title{
-      padding : 5px;
-    }
+      padding : 14px;
+     }
     .h3{
         margin-top: 12px;
     }
@@ -422,6 +423,7 @@
         height: auto;
         justify-content : space-between;
         transition: width 2s; 
+       margin-bottom : 70px;
     }
     .btn1{
        /* display: none; */
