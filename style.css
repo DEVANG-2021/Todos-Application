@@ -422,6 +422,7 @@
     .todo{
         display : flex;
         flex-direction : column;
+       width : 77vw;
         height: auto;
         justify-content : space-between;
         transition: width 2s; 
