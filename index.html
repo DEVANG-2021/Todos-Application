@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Todos-app</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="main/jquery-3.5.1.js"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <header id="header">
+                <div class="heading">
+                    <h1 id="h1">Todos Application</h1>
+                </div>
+            
+                <div class="menu">
+                    <h2 class="me">Menus</h2>
+                    <img src="menu.png" alt="menu" class="menu-btn">
+                </div>
+                
+        <nav class="navbar">
+                   
+            <ul class="ul">
+                <a href="#" id="a1" class="a1" onclick="myfunc()">  <li>Home</li></a>
+                <a href="#" class="a1" id="a2" onclick="myfunc1()">  <li>Todos Application</li></a>
+            </ul>
+            <form action="" class="form">
+                <input type="text" class="input" id="search" placeholder="Search here..." onkeyup="searchfunc()"> 
+                    <!-- <button type="submit" class="btn">
+                  <i class="fa fa-search"></i>
+                </button> -->
+               </form>
+        
+
+        </nav>
+ </header> 
+     <div class="h1-secotion" id="h1_sec">
+         <h1 class="title">Home </h1>
+    
+     <section class="home">
+         <h1 class="h2">About Todos Application</h1>
+         <div class="line"></div>
+         <div class="about">
+              
+            <ul class="p">
+               <li class="li">   This is Simple Todos Application which is used to perform Basic operation for daily tasks.</li>
+                <li class="li">  Features Provided by the application are : </li>
+                <li class="li">  User is able to Add task </li>
+                <li class="li">  User is able to Delete task </li>
+                <li class="li">  User is able to Search task </li>
+                <li class="li">  Tasks are stored in localstorage of browser, so User can see all the tasks in future whenever he or she will visiting web application</li>
+                <!-- <li>  User is able to Update task  </li> -->
+             </ul>
+
+         </div>
+             </section>
+           
+            </div>
+
+            <div class="todo-secotion" id="todo_sec">
+                <h1 class="title">Todo Application</h1>
+                 
+       
+                
+            <section class="todo" >
+                <!-- <h1 class="h2">Add Tasks </h1> -->
+              
+                <div class="add-task">
+                     <input type="text" class="ip" placeholder="Enter Your Task" id="input">
+                      <button type="submit" id="button" class="btn1">Add Task</button>
+                     <!-- <button type="submit" class="btn1">Delete</button>  -->
+                    </div>
+                    <h1 class="h3"> Tasks </h1> 
+                     <div class="add-task1">
+                        
+                       
+                    <ul class="p" id="ul">
+                    <!-- <li class="list"> list 1  
+                        <button type="submit" class="btn2">Edit</button>   -->
+                        <!-- <button type="submit" class="btn3">Delete</button>
+                    </li>
+                -->
+                    </ul>
+         
+                             </div>
+                </div>
+                    </section>
+                  
+                   </div>
+  
+        
+        <script>
+            const menubtn = document.querySelector('.menu-btn');
+            const navlinks = document.querySelector('.navbar');
+    
+            // menubtn.addEventListener('click',()=>{
+                // navlinks.classList.toggle('mobile-menu');
+                
+            // })
+           $(document).ready(function(){
+            $('.menu-btn').click(function(){
+                $('.navbar').slideToggle("slow");
+                  
+                       $('.navbar').fadeTo(700,1.0);
+               })
+        })
+        </script>
+
+     
+
+        <script>
+            function myfunc(){
+                const h1 = document.getElementById('h1_sec');
+                const todo_sec = document.getElementById('todo_sec');
+                const inputbox = document.getElementById('search');
+
+                h1.style.display= "block";
+                todo_sec.style.display = "none";
+                inputbox.style.display="none";
+            }
+
+            function myfunc1(){
+                const h1 = document.getElementById('h1_sec');
+                const todo_sec = document.getElementById('todo_sec');
+                const inputbox = document.getElementById('search');
+
+                h1.style.display= "none";
+                todo_sec.style.display = "block";
+               inputbox.style.display = "block";
+            }
+
+
+            </script>
+
+        <script>
+            $(document).ready(function(){
+
+                $('#h1').fadeIn(700);
+         
+            });
+
+            
+               $(document).ready(function(){
+                    $('.title').fadeTo(2000,1.0);
+                    $('.h2').fadeTo(3500,1.0);
+                    $('.p').fadeTo(4500,1.0);
+                    $('h2').fadeIn(2100);
+                    $('.menu-btn').fadeTo(1400,1.0);
+               });
+
+                 $('.home').ready(function(){
+                     $('.home').css('transition', 'width 2s');
+                     
+                 })
+
+
+                 $('.todo').ready(function(){
+                     $('.todo').css('transition', 'width 2s');
+                     
+                 })
+ 
+             $('#header').ready(function(){
+                 $('#header').fadeIn(1500);
+            })             
+
+        </script>
+
+        
+        <script src="script.js"></script>
+       
+    </body>
+</html>
